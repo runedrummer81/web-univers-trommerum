@@ -6,27 +6,68 @@
 
 
 body{
-    font-family: sans-serif, Helvetica, sans-serif;
-    text-transform: uppercase;
+    font-family: sans-serif;
+    text-transform: none;
     text-decoration: none;
     min-height: 100vh;
-    background: url('../img/background.jpg'); /* .. for at hoppe fra ccs-filen op til mappens niveau */
     background-size: cover; 
     background-position: center;
 } 
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; /*det med marginer og auto right/left gør at billedet står i midten*/
-    margin-bottom: 5px;
-    margin-top: 20px;
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */}
+
+.background-image {
+    display: block; /* Remove space below the image */
+    max-width: 100%; /* Make sure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.overlay-image {
+    position: absolute; /* Logoet forbliver oppe i toppen */
+    top: 90px;
+    height: auto; 
   }
 
-Dette er en test
+
+.førsteoverskrift {
+    position: absolute;
+    top: 25%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 300px;
+    padding-top: 20px;
+    margin: 20px;
+    
+    border-radius: 20px;
+    color: #000000;
+}
+
+.textbox {
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 10px;
+    margin: 20px;
+    color: #000000;
+    text-align: center;
+    border: 2px ;
+    font-size: 20px;
+}
+
 header{
     position: fixed;
-    top: 160px;
+    top: 0px;
     left: 0;
     right: 0;
     background: #0B76DB;
@@ -46,6 +87,7 @@ header .logo{
 
 header .navbar ul {
     list-style: none; /* Får prikkerne til at forsvinde */
+    text-transform: uppercase; 
 }
 
 header .navbar ul li {
@@ -147,4 +189,294 @@ header .navbar ul li ul li ul{
     display: block;
 }
 
+}
+
+.magisktrommer{
+    position: absolute;
+    top: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    width: 100%;
+    background-color: #095EAF;
+    text-align: left;
+    color: #fff;
+    border: 2px ;
+    font-size: 20px;
+}
+
+
+.drummerguy{
+    position: flex;
+    height: auto;
+    width: 500px;
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.magiskoverskrift {
+    position: flex;
+    border: 2px;
+    padding-left: 10px;
+    padding-right: 300px;
+    margin-left: 20px;
+}
+
+.magisktekst{
+    position: flex;
+    border: 2px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.hvidboks{
+    position: absolute;
+    top: 140%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    color: #000000;
+    border: 2px ;
+    font-size: 15px;
+}
+
+.citat{
+    text-align: center;
+    position: flex;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.highlight{
+    color: #0B76DB;
+}
+
+.tid{
+    position: absolute;
+    height: auto;
+    width: 300px;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.idé {
+    position: absolute;
+    width: 300px;
+    left: 650px;
+    top: 100px;
+}
+
+.trommer{
+    position: absolute;
+    width: 350px;
+    left: 1150px;
+    top: 140px;
+}
+
+.øveplano{
+    position: absolute;
+    top: 400px;
+    left: 65px;
+    bottom: 30px;
+    font-size: 30px;    
+    color: #0B76DB;
+}
+
+.øveplantekst{
+    text-align: center;
+    position: flex;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 1150px;
+    margin-top: 380px;
+    font-size: 16px;
+
+}
+
+.ideo{
+    position: absolute;
+    top: 400px;
+    left: 690px;
+    bottom: 30px;
+    font-size: 30px;    
+    color: #0B76DB;
+}
+
+.idetekst {
+   position: absolute;
+   left: 42%;
+   top: 85%;
+   right: 40%;
+   text-align: center;
+   font-size: 16px;
+
+}
+
+.trommeo{
+    position: absolute;
+    top: 400px;
+    left: 1200px;
+    bottom: 30px;
+    font-size: 30px;  
+    color: #0B76DB;
+}
+
+.trommetekst{
+    position: absolute;
+   left: 70%;
+   top: 85%;
+   text-align: center;
+   margin-right: 15px;
+   font-size: 16px;
+}
+
+.footersection{
+    position: absolute;
+    background-color: #112E4A;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    top: 1500px;
+}
+
+.tidoverskrift{
+    text-align: center;
+    color: #0B76DB;
+    font-size: 35px; 
+}
+
+.tidbaggrund{
+    position: absolute;
+    width: 100%;
+    height: 920px;
+    object-fit: cover;
+}
+
+.tidartikel1{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: justify;
+    color: #000000;
+    
+}
+
+.tid2{
+    position: absolute;
+    top: 138%; 
+    left: -20%;
+    right: 60%;
+    color: #fff;
+    text-align: justify;
+
+}
+
+.tid3{
+    position: absolute;
+    top: 335%; 
+    left: -20%;
+    right: 60%;
+    color: #fff;
+    text-align: justify;
+}
+
+.tid4{
+    position: absolute;
+    top: 530%; 
+    left: -20%;
+    right: 60%;
+    color: #fff;
+    text-align: justify;
+}
+
+.bullet-points{
+    position: absolute;
+    text-align: justify;
+    top: 90%;
+    left: 16%;
+    right: 55%;
+    
+}
+
+.bullet-points2{
+    text-align: justify;
+    position: absolute;
+    top: 143%;
+    left: 16%;
+    right: 55%;
+}
+
+.bullet-points3{
+    text-align: justify;
+    position: absolute;
+    top: 190%;
+    left: 16%;
+    right: 55%;
+}
+
+.blåboks{
+    position: flex;
+    width: 100%;  /* 30% of the width */
+    height: 1100px;
+    background-color: #095EAF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 460px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tallet1{
+    position: absolute;
+    width: 150px;
+    top:70%;
+    left: 2%;
+    
+}
+
+.schedule{
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    right: 8%;
+    top: 62%;
+}
+
+.tallet2{
+    position: absolute;
+    width: 150px;
+    top: 121%;
+    left: 2%;
+}
+
+.timer{
+    position: absolute;
+    width: 350px;
+    right: 10%;
+    top: 112%;
+
+}
+
+.tallet3{
+    position: absolute;
+    top: 171%;
+    left: 2%;
+    width: 150px;
+}
+
+.increase{
+    width: 300px;
+    position: absolute;
+    top: 168%;
+    left: 70%;
 }

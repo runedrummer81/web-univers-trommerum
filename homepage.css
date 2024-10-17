@@ -216,7 +216,6 @@ header .navbar ul li ul li ul{
 }
 
 .magiskoverskrift {
-    position: flex;
     border: 2px;
     padding-left: 10px;
     padding-right: 300px;
@@ -248,7 +247,6 @@ header .navbar ul li ul li ul{
 
 .citat{
     text-align: center;
-    position: flex;
     margin-bottom: 20px;
     margin-left: 200px;
     margin-right: 200px;
@@ -293,7 +291,6 @@ header .navbar ul li ul li ul{
 
 .øveplantekst{
     text-align: center;
-    position: flex;
     margin-bottom: 20px;
     margin-left: 30px;
     margin-right: 1150px;
@@ -427,7 +424,6 @@ header .navbar ul li ul li ul{
 }
 
 .blåboks{
-    position: flex;
     width: 100%;  /* 30% of the width */
     height: 1300px;
     background-color: #095EAF;
@@ -551,7 +547,6 @@ header .navbar ul li ul li ul{
     position: absolute;
     top: 40%;
     left: 5%;
-    transform: translate(-50%,-50);
     box-shadow: 0 10px 20px rgb(40, 40, 40);
     border-radius: 15px;
 }
@@ -569,7 +564,7 @@ header .navbar ul li ul li ul{
     right: 0;
     bottom: 0;
     opacity: 0;
-    transition: opacity 0,4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
     background: black;
     cursor: pointer;
     border-radius: 15px;
@@ -593,7 +588,6 @@ header .navbar ul li ul li ul{
     position: absolute;
     top: 40%;
     left: 40%;
-    transform: translate(-50%,-50);
     box-shadow: 0 10px 20px rgb(40, 40, 40);
     border-radius: 15px;
 }
@@ -611,7 +605,7 @@ header .navbar ul li ul li ul{
     right: 0;
     bottom: 0;
     opacity: 0;
-    transition: opacity 0,4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
     background: black;
     cursor: pointer;
     border-radius: 15px;
@@ -635,7 +629,6 @@ header .navbar ul li ul li ul{
     position: absolute;
     top: 40%;
     right: 5%;
-    transform: translate(-50%,-50);
     box-shadow: 0 10px 20px rgb(40, 40, 40);
     border-radius: 15px;
 }
@@ -653,7 +646,7 @@ header .navbar ul li ul li ul{
     right: 0;
     bottom: 0;
     opacity: 0;
-    transition: opacity 0,4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
     background: black;
     cursor: pointer;
     border-radius: 15px;
@@ -811,7 +804,6 @@ header .navbar ul li ul li ul{
 }
 
 .magisktrommer2{
-    position: flex;
     margin-top: 330px;
     height: 260px;
     padding-top: 20px;

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trommerum</title>
+    <link rel="stylesheet" href="/homepage.css">
+</head>
+<body>
+    <div class="image-container">         <!-- Jeg ved godt vi helst skulle undgå at bruge divs, 
+        men jeg havde svært ved at få det hen uden (særligt på forsiden med det baggrundsbillede og at få det layeret ordentligt.) -->
+        <img src="/pictures/trommerum-logo.png" alt="hjemmesidens logo" class="overlay-image">
+    <header>
+        <a href="" class="logo"></a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul> 
+                <li><a href="/homepage.html">Forside</a></li>
+                <li><a href="#">Hvorfor trommer?</a></li>
+                <li><a href="/strukturtid.html">Strukturer din tid</a></li>
+                <li><a href="tips-og-guides.html">Tips og guides+</a>
+                <ul>
+                    <li><a href="#">Stem dine trommer</a></li>
+                    <li><a href="tips-og-guides/indspil.html">Indspil</a>
+                   <!-- <ul>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                    </ul> -->
+                </ul>
+                </li>
+                <!--<li><a href="#">Gallery +</a>
+                   <ul> Man kan også sige "ul>li*2>a"   <i> </i>
+                    <li><a href="#">Grid gallery</a></li>
+                    <li><a href="#">Flex gallery</a></li>
+                   </ul>
+                </li> -->
+                <li><a href="#">Dit trommesæt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<section class="indspiltekst">
+    <article>
+        <h1 class="overskrift1"><span class="highlight">Yamaha-EAD10: Den Ultimative Trommemikrofon</h1>
+            <p>Da vi her på siden tager udgangspunkt i unge studerende, har vi fokus på de produkter, hvor man får mest for pengene.
+            Det korte svar er her det 'drum-module' som Yamaha har lavet. Yamaha EAD10 er en innovativ trommemikrofon, der revolutionerer måden, du spiller og optager dine akustiske trommer på. Den kombinerer det bedste fra både akustisk og elektronisk musik, hvilket gør den til et must-have for både amatører og professionelle trommeslagere.</p>
+        
+        <article class="overskrift2"> 
+            <h2 span class="highlight"></span>Hvordan Virker Mikrofonen?</h2>
+            <p class="tekst2">Yamaha EAD10 fungerer ved at kombinere en sensor og et digitalt modul, der nemt kan monteres på din storetromme. Sensoren opsamler lyden fra hele trommesættet og konverterer det til digitale signaler, som derefter kan bearbejdes med forskellige effekter og lyde. Dette giver dig mulighed for at skabe et hybrid setup, der forbedrer din akustiske trommelyd. Desuden fungerer mikrofonen også som en trigger for din storetromme.</p>
+        </article>
+        </p>
+        <ul class="bullet-pointsrecord">
+            <li><strong>Lydbehandling:</strong> EAD10 tilbyder 757 forskellige lyde og 50 forudindstillede scener, som du kan tilpasse efter din præference. Du kan også tilføje dine egne WAV-filer for at skabe unikke lyde.</li> <br>
+            <li><strong>Optagelse:</strong> Med appen (Rec'n Share) kan du optage dine trommesoloer, redigere dem og dele dem direkte på sociale medier. Dette gør det nemt at dokumentere dine fremskridt og dele din musik med venner og familie.</li>
+          </ul>
+      </article>
+
+<section class="magisktrommer2">
+          <h2 class="overskrift3">Hør den i aktion her!</h2>
+            <p class="tekstcover"> EAD10 er ideel til live-optrædener, da den giver en enkel opsætning med minimal kabelføring. Du kan nemt tilslutte den til PA-systemer eller optageudstyr.
+                Den indbyggede stereo-mikrofon sikrer desudenen klar og fyldig lyd, der fanger nuancerne af dit trommespil.
+                Yamaha EAD10 er ikke bare en trommemikrofon; det er et alsidigt værktøj, der kan transformere din måde at spille og optage trommer på. Uanset om du er studerende, amatør eller professionel musiker, vil EAD10 give dig de nødvendige værktøjer til at tage dit trommespil til nye højder. 
+            </p>
+        <img class="trommemikrofon" src="/pictures/yamaha-ead10.jpg" alt="yamaha-EAD10 trommemikrofon">
+        <iframe class="mitcover" width="800" height="460" src="https://www.youtube.com/embed/cJlnIg33510" title="Spiritbox &quot;JADED&quot; (drum cover)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+      
+</section>
+
+
+<aside class="comments">
+    <h3>Spørgsmål? Skriv endelig til os!</h3>
+    <form action="#">
+      <textarea
+        id="kommentar"
+        name="kommentar"
+        rows="8"
+        cols="45"
+        placeholder="Din kommentar..."
+        aria-required="true"
+      ></textarea>
+
+      <div class="input-til-kommentar">
+        <p>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            value=""
+            placeholder="Navn"
+            size="30"
+            aria-required="true"
+          />
+        </p>
+        <p>
+          <input
+            id="email"
+            name="email"
+            type="text"
+            value=""
+            placeholder="E-mail"
+            size="30"
+            aria-required="true"
+          />
+        </p>
+      </div>
+
+      <input id="consent" name="consent" type="checkbox" value="yes" />
+      <label for="consent"
+        >Gem mit navn og mail til næste gang jeg kommenterer.</label
+      >
+      <p class="submit">
+        <input
+          name="submit"
+          type="submit"
+          id="submit"
+          class="submit"
+          value="Submit"
+        />
+      </p>
+    </form>
+  </aside>
+
+<section class="footerboks1">
+    <footer>
+        <img class="footerlogo" src="/pictures/trommerum-logo-hvid.png" alt="">
+        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+  </section>
+
+
+
+</body>
+</html>

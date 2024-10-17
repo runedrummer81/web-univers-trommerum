@@ -6,7 +6,7 @@
 
 
 body{
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: none;
     text-decoration: none;
     min-height: 100vh;
@@ -19,6 +19,14 @@ body{
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */}
+
+.lilletromme{
+    width: 800px;
+    left: 0%;
+    top: 12%;
+    position: absolute;
+
+}    
 
 .background-image {
     display: block; /* Remove space below the image */
@@ -33,36 +41,29 @@ body{
     height: auto; 
   }
 
+  .overskriftboks{
+    position: flex;
+    margin-left: 400px;
+    margin-right:400px;
+    margin-top: 300px;
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 30px;
+    
+  }
 
 .førsteoverskrift {
-    position: absolute;
-    top: 25%;
-    
     margin-left: auto;
     margin-right: auto;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-bottom: 300px;
-    padding-top: 20px;
-    margin: 20px;
-    
+    margin: 5px;
     border-radius: 20px;
     color: #000000;
 }
 
 .textbox {
-    position: absolute;
-    top: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 10px;
-    margin: 20px;
-    color: #000000;
-    text-align: center;
-    border: 2px ;
-    font-size: 20px;
+    
+    
 }
 
 header{
@@ -207,13 +208,12 @@ header .navbar ul li ul li ul{
 
 
 .drummerguy{
-    position: flex;
     height: auto;
-    width: 500px;
+    width: 600px;
     float: right;
-    margin-right: 30px;
-    margin-bottom: 40px;
-    margin-top: 20px;
+    margin-right: 20px;
+    margin-top: -45px; 
+
 }
 
 .magiskoverskrift {
@@ -225,10 +225,12 @@ header .navbar ul li ul li ul{
 }
 
 .magisktekst{
-    position: flex;
-    border: 2px;
-    margin-left: 30px;
-    margin-top: 20px;
+    position: absolute;
+    left: 2%;
+    right: 50%;
+    top: 12%;
+    text-align: justify;
+    font-size: 19px;
 }
 
 .hvidboks{
@@ -277,14 +279,14 @@ header .navbar ul li ul li ul{
 .trommer{
     position: absolute;
     width: 350px;
-    left: 1150px;
-    top: 140px;
+    right: 3%;
+    top: 140%;
 }
 
 .øveplano{
     position: absolute;
-    top: 400px;
-    left: 65px;
+    top: 85%;
+    left: 6%;
     bottom: 30px;
     font-size: 30px;    
     color: #0B76DB;
@@ -303,8 +305,8 @@ header .navbar ul li ul li ul{
 
 .ideo{
     position: absolute;
-    top: 400px;
-    left: 690px;
+    top: 85%;
+    left: 46%;
     bottom: 30px;
     font-size: 30px;    
     color: #0B76DB;
@@ -322,8 +324,9 @@ header .navbar ul li ul li ul{
 
 .trommeo{
     position: absolute;
-    top: 400px;
-    left: 1200px;
+    top: 85%;
+    right: 7%;
+
     bottom: 30px;
     font-size: 30px;  
     color: #0B76DB;
@@ -402,7 +405,7 @@ header .navbar ul li ul li ul{
 .bullet-points{
     position: absolute;
     text-align: justify;
-    top: 90%;
+    top: 96%;
     left: 16%;
     right: 55%;
     
@@ -411,7 +414,7 @@ header .navbar ul li ul li ul{
 .bullet-points2{
     text-align: justify;
     position: absolute;
-    top: 143%;
+    top: 155%;
     left: 16%;
     right: 55%;
 }
@@ -419,7 +422,7 @@ header .navbar ul li ul li ul{
 .bullet-points3{
     text-align: justify;
     position: absolute;
-    top: 190%;
+    top: 210%;
     left: 16%;
     right: 55%;
 }
@@ -427,7 +430,7 @@ header .navbar ul li ul li ul{
 .blåboks{
     position: flex;
     width: 100%;  /* 30% of the width */
-    height: 1100px;
+    height: 1300px;
     background-color: #095EAF;
     color: #fff;
     padding: 20px;
@@ -435,6 +438,7 @@ header .navbar ul li ul li ul{
     margin-top: 460px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .tallet1{
     position: absolute;
@@ -449,13 +453,13 @@ header .navbar ul li ul li ul{
     width: 400px;
     height: 350px;
     right: 8%;
-    top: 62%;
+    top: 70%;
 }
 
 .tallet2{
     position: absolute;
     width: 150px;
-    top: 121%;
+    top: 126%;
     left: 2%;
 }
 
@@ -463,13 +467,13 @@ header .navbar ul li ul li ul{
     position: absolute;
     width: 350px;
     right: 10%;
-    top: 112%;
+    top: 128%;
 
 }
 
 .tallet3{
     position: absolute;
-    top: 171%;
+    top: 181%;
     left: 2%;
     width: 150px;
 }
@@ -477,6 +481,346 @@ header .navbar ul li ul li ul{
 .increase{
     width: 300px;
     position: absolute;
-    top: 168%;
+    top: 188%;
     left: 70%;
+}
+
+/* Herfra vil det være hvad der er relevant ift. min tips og guides subpage */
+
+/* .guideoverskrift1{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #095EAF;
+    font-size: 40px;
+}
+
+.guideoverskrift2{
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #095EAF;
+    font-size: 40px;
+}
+
+.guideoverskrift3{
+    position: absolute;
+    top: 90%;
+    right: 6%;
+    transform: translate(-50%, -50%);
+    color: #095EAF;
+    font-size: 40px;
+}
+
+.drumtuning{
+    width: 300px;
+    height: 240px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.drumplaying{
+    width: 300px;
+    height: 240px;
+    position: absolute;
+    top: 50%;
+    left:40%;
+    right: 45%;
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.practise{
+    width: 300px;
+    height: 240px;
+    position: absolute;
+    top: 50%;
+    border-radius: 15px;
+    right: 10%;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+} */
+
+
+.container{
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: translate(-50%,-50);
+    box-shadow: 0 10px 20px rgb(40, 40, 40);
+    border-radius: 15px;
+}
+
+.tune{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0,4s ease-in-out;
+    background: black;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+.container:hover .overlay{
+    opacity: 0.8;
+}
+
+.container1{
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%,-50);
+    box-shadow: 0 10px 20px rgb(40, 40, 40);
+    border-radius: 15px;
+}
+
+.indspil{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.overlay1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0,4s ease-in-out;
+    background: black;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.content1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+.container1:hover .overlay1{
+    opacity: 0.8;
+}
+
+.container2{
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    transform: translate(-50%,-50);
+    box-shadow: 0 10px 20px rgb(40, 40, 40);
+    border-radius: 15px;
+}
+
+.practise{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0,4s ease-in-out;
+    background: black;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.content2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+.container2:hover .overlay2{
+    opacity: 0.8;
+}
+
+.infobox{
+    width: 100%;
+    top: 100%;
+    position: absolute;
+    height: 410px;
+    background-color: #095EAF;
+}
+.infoboxoverskrift{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+.estepario{
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.drumeo{
+    width: 300px;
+    position: absolute;
+    left: 40%;
+    top: 45%;
+}
+
+.robbrown{
+    width:300px;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+}
+
+.comments{
+    position: absolute;
+    left: 1%;
+    bottom: 15%;
+
+}
+
+.footerbox{
+    width: 100%;
+    position: absolute;
+    top: 155%;
+    background-color: #112E4A;
+    color: white;
+}
+
+.footerlogo{
+    width: 300px;
+    padding: 15px;
+
+}
+
+.overskrift1{
+    font-size: 23px;
+}
+
+.indspiltekst{
+    width: 100%;
+    position: absolute;
+    height: 500px;
+    top: 350px;
+    text-align: justify;
+    padding-right: 800px;
+    padding-left: 15px;
+    
+}
+
+.trommemikrofon{
+    width: 600px;
+    border-radius: 20px;
+    position: absolute;
+    right: 2%;
+    top: 0%;
+    box-shadow: 0 10px 20px rgb(40, 40, 40);
+}
+
+.overskrift2{
+    position: absolute;
+    top: 30%;
+}
+
+.tekst2{
+    padding-right: 800px;
+}
+
+.mitcover{
+    position: absolute;
+    width: 600px;
+    height: 350px;
+    
+    right: 2%;
+    border-radius: 20px;
+    top: 472px;
+    
+}
+
+.bullet-pointsrecord{
+    text-align: justify;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    right: 53%;
+}
+
+.overskrift3{
+    position: absolute;
+    top: 95%;
+    color: #ffffff;
+}
+
+.footerboks1{
+    width: 100%;
+    margin-top: 1400px;
+
+    background-color: #112E4A;
+    color: white;
+}
+
+.tekstcover{
+    position: absolute;
+    top: 102%;
+    color: rgb(255, 255, 255);
+    padding-right: 800px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footerboks2{
+    width: 100%;
+    
+
+    background-color: #112E4A;
+    color: white;
+}
+
+.magisktrommer2{
+    position: flex;
+    margin-top: 330px;
+    height: 260px;
+    padding-top: 20px;
+    width: 100%;
+    padding-left: 10px;
+    background-color: #095EAF;
+    text-align: left;
+    color: #fff;
+    border: 2px ;
+    font-size: 20px;
+    border-radius: 15px;
 }
